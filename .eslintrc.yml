@@ -1,10 +1,10 @@
 {
-  "env": {
+  "env":
     "node": true
-  },
-  "extends": {
-    "airbnb-base"
-  },
+    
+  "extends":
+    -'airbnb-base'
+    
   "rules": {
     "no-console": 0
     "import/extensions": 0
