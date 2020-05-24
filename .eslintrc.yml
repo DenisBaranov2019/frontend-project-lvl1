@@ -1,13 +1,11 @@
-{
-  "env":
-    "node": true
+
+  env:
+    node: true
     
-  "extends":
+  extends:
     -'airbnb-base'
     
-  "rules": {
-    "no-console": 0
-    "import/extensions": 0
-  }
-}
+  rules:
+    no-console: 0
+    "import/extensions: 0
 
