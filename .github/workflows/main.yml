@@ -1,17 +1,18 @@
-name: My-Action-Github
+
+
+name: My-Github-Actions
 
 on:
   push:
     branches: [ master ]
 
 jobs:
-  my-testing:
+  build:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
 
-    - name: Run-linter
-      run: make lint
-      
-      
+    - name: my-testing
+      run: mpx eslint .
+
