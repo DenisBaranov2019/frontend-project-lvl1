@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: install
-        run: make install
+        run: ls -la && make install
         
       - name: lint
         run: make lint
