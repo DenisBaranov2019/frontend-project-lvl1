@@ -12,7 +12,8 @@ jobs:
 
     steps:
       - name: install
-        run: make install
+        run: |
+          make install
         
       - name: lint
         run: make lint
