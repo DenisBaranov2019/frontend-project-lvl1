@@ -4,15 +4,14 @@ name: My-Github-Actions
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
 
 jobs:
-  build:
+  my-testing-linter:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-
     - name: my-testing
       run: npx eslint  .
 
