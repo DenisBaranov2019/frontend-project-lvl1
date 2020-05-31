@@ -12,5 +12,5 @@ jobs:
 
     steps:
     - name: my-testing
-      run: make lint
+      run: pwd && make lint
 
