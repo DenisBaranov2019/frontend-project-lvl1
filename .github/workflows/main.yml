@@ -14,5 +14,5 @@ jobs:
       - name: install
         run: make install
         
-      - name: my-testing
+      - name: lint
         run: make lint
