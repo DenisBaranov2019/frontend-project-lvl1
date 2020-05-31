@@ -7,10 +7,12 @@ on:
       - master
 
 jobs:
-  my-testing-linter:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: my-testing
-      run: pwd && make lint
-
+      - name: install
+        run: make install
+        
+      - name: my-testing
+        run: make lint
