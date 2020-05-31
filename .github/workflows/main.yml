@@ -12,5 +12,5 @@ jobs:
 
     steps:
     - name: my-testing
-      run: npx eslint .
+      run: make lint
 
