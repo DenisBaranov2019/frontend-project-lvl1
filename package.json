@@ -1,10 +1,11 @@
 {
   "name": "question-answer",
   "version": "1.0.0",
-  "description": "",
+  "description": "<a href=\"https://codeclimate.com/github/codeclimate/codeclimate/maintainability\"><img src=\"https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability\" /></a> ![Node CI](https://github.com/DenisBaranov2019/frontend-project-lvl1/workflows/Node%20CI/badge.svg)",
   "type": "module",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "main": "cli.js",
   "scripts": {
@@ -33,5 +34,6 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.1"
-  }
+  },
+  "keywords": []
 }
