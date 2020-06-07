@@ -19,11 +19,7 @@ export default () => {
       count += 1;
     } else {
       console.log('Uncorrect! Try again.');
-      if (count > 0) {
-        count -= 1;
-      } else {
-        count = 0;
-      }
+      count = 0;
     }
   }
   console.log(`Congratulation, ${name}!`);
