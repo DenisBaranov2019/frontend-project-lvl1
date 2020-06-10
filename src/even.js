@@ -17,10 +17,15 @@ export default () => {
     if (UserAnswer === result) {
       console.log('Correct!');
       count += 1;
+      if (count === 3) {
+        console.log(`Congratulation, ${name}!`);
+      }
+    } else if (result === 'no') {
+      console.log(`"${UserAnswer}" is wrong answer ;(. Correct answer was "no".\nLet's try again, ${name}!`);
+      count = 3;
     } else {
-      console.log('Uncorrect! Try again.');
-      count = 0;
+      console.log(`"${UserAnswer}" is wrong answer ;(. Correct answer was "yes".\nLet's try again, ${name}!`);
+      count = 3;
     }
   }
-  console.log(`Congratulation, ${name}!`);
 };
