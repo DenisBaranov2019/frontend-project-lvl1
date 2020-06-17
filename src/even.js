@@ -13,18 +13,15 @@ export default () => {
     const number = getRandomInRange(0, 20);
     console.log(`Question: ${number}`);
     const UserAnswer = (readlineSync.question('Answer: '));
-    const result = isEven(number) ? 'yes' : 'no';
-    if (UserAnswer === result) {
+    const correctAnswer = isEven(number) ? 'yes' : 'no';
+    if (UserAnswer === correctAnswer) {
       console.log('Correct!');
       count += 1;
       if (count === 3) {
         console.log(`Congratulation, ${name}!`);
       }
-    } else if (result === 'no') {
-      console.log(`"${UserAnswer}" is wrong answer ;(. Correct answer was "no".\nLet's try again, ${name}!`);
-      count = 3;
     } else {
-      console.log(`"${UserAnswer}" is wrong answer ;(. Correct answer was "yes".\nLet's try again, ${name}!`);
+      console.log(`"${UserAnswer}" is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${name}!`);
       count = 3;
     }
   }
